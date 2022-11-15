@@ -1,0 +1,43 @@
+<!-- <div class="container pt-5">
+  <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">PlaceName</th>
+          <th scope="col">Follow</th>
+          <th scope="col">ArticleContent</th>
+          <th scope="col">Comment</th>
+          <th scope="col">Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let student of students" >
+        
+          <td>{{student.placename}}</td>
+          <td>{{student.follow}}</td>
+          <td>{{student.articlecontent}}</td>
+          <td>{{student.comment}}</td>
+          <td>{{student.date}}</td>
+          <td> 
+              <button (click)="editStudent(student.data,student._id)" type="button" routerLink="edit-form" class="btn btn-primary btn-sm">Edit</button> &nbsp;&nbsp; -->
+              <!-- <button (click)="deleteStudent(student._id)" type="button" class="btn btn-primary btn-sm">Delete</button>
+          </td>
+
+        </tr>
+    
+      </tbody>
+    </table>
+</div> -->
+
+
+
+<div class="card " style="width: 33rem; ">
+  <img src="../assets/1119034.jpg" class="card-img-top" alt="...">
+  <div class="card-body" *ngFor="let blog of blogs">
+    <h5 class="card-title">{{blog.placename}}</h5>
+    <p class="card-text">{{blog.articlecontent}}</p>
+    <p class='price'>Followers : {{blog.follow}}</p>
+    <hr>
+    <p >comments:{{blog.comment}}</p>
+    <p >Date:{{blog.date}}</p>
+  </div>
+</div>
